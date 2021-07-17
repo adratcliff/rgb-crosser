@@ -1,5 +1,8 @@
 # rgb-crosser
 
+## Description
+A very simple visualiser tool which visualises how an intial set of RGB variables changes as you perform 1-for-1 swaps of the different values (red, green, blue).
+
 ## Project setup
 ```
 npm install
