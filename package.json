@@ -1,13 +1,22 @@
 {
   "name": "rgb-crosser",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:page": "vue-cli-service build --target lib --name rgb-crosser src/App.vue",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint"
+  },
+  "main": "dist/rgb-crosser.umd.js",
+  "module": "dist/rgb-crosser.umd.js",
+  "exports": {
+    "*": {
+      "require": "./dist/rgb-crosser.umd.js",
+      "style": "./dist/rgb-crosser.css"
+    }
   },
   "dependencies": {
     "core-js": "^3.8.3",
