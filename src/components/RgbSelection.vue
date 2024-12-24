@@ -17,7 +17,7 @@
         <span
           class="colour-swap-label"
           :class="selection.red">
-          {{ selection.red | capitalise }}
+          {{ capitalise(selection.red) }}
         </span>
         <button
           type="button"
@@ -34,7 +34,7 @@
         <span
           class="colour-swap-label"
           :class="selection.green">
-          {{ selection.green | capitalise }}
+          {{ capitalise(selection.green) }}
         </span>
         <button
           type="button"
@@ -51,7 +51,7 @@
         <span
           class="colour-swap-label"
           :class="selection.blue">
-          {{ selection.blue | capitalise }}
+          {{ capitalise(selection.blue) }}
         </span>
         <button
           type="button"
@@ -113,8 +113,6 @@ export default {
       this.selection[a] = this.selection[b];
       this.selection[b] = tmp;
     },
-  },
-  filters: {
     capitalise(val) {
       return val.slice(0, 1).toUpperCase() + val.slice(1);
     },

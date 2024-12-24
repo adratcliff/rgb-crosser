@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="rgb-app">
     <div class="initial-selectors">
       <label for="red-input">
         Red
@@ -63,7 +63,7 @@ html {
   color: #fafafa;
 }
 
-#app {
+#rgb-app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
